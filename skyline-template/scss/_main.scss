@@ -1,0 +1,324 @@
+ // this is area is for reserved class
+ nav ul, nav ol, li { list-style: inherit;}
+#main-container { height:100%; height: auto !important; min-height:100%; }
+.hide { position:relative;}
+.ease,a,input[type="submit"],button { @include transition(all 0.5s ease); }
+.loader { position:relative; overflow:hidden; background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.auto { max-width:$maxWidth; margin: 0 auto; }
+#main-wrapper { }
+.fl { float:left; }
+.fr { float:right; }
+.clr { display: block; float:none; clear:both; }
+.bp-set { display:inline-block; *display:inline;
+  &.vm { vertical-align:middle; }
+  &.vt { vertical-align:top; }
+  &.vb { vertical-align:bottom; }
+}
+.bp-box { @include box-sizing(border-box); }
+.bp-rel { position:relative; }
+.bp-ab { position:absolute; }
+.co-black { color: $coBlack; }
+.co-white { color: $coWhite; }
+.pad-edge { padding-left: 15px; padding-right: 15px; }
+.bp-img {
+  img { max-width: 100%; height: auto; }
+  &.wide img { width: 100%; }
+}
+.bp-curve { @include border-radius(5px); }
+.bp-circle { @include border-radius(50%); }
+.mobile-input { @include appearance(none); @include border-radius(0); }
+.bp-centralize { @include transform(translate3d(0, -50%, 0)); }
+.pt1{padding-top:$spaceOne}
+.pt2{padding-top:$spaceTwo; @include breakpoint(phablet) { padding-top: $spaceOne; } }
+.pt3{padding-top:$spaceThree; @include breakpoint(phablet) { padding-top: $spaceTwo; } }
+.pt4{padding-top:$spaceFour; @include breakpoint(phablet) { padding-top: $spaceThree; } }
+.pt5{padding-top:$spaceFive; @include breakpoint(phablet) { padding-top: $spaceFour; } }
+.pb1{padding-bottom:$spaceOne}
+.pb2{padding-bottom:$spaceTwo; @include breakpoint(phablet) { padding-bottom: $spaceOne; } }
+.pb3{padding-bottom:$spaceThree; @include breakpoint(phablet) { padding-bottom: $spaceTwo; } }
+.pb4{padding-bottom:$spaceFour; @include breakpoint(phablet) { padding-bottom: $spaceThree; } }
+.pb5{padding-bottom:$spaceFive; @include breakpoint(phablet) { padding-bottom: $spaceFour; } }
+.mt1{margin-top:$spaceOne}
+.mt2{margin-top:$spaceTwo; @include breakpoint(phablet) { margin-top: $spaceOne; } }
+.mt3{margin-top:$spaceThree; @include breakpoint(phablet) { margin-top: $spaceTwo; } }
+.mt4{margin-top:$spaceFour; @include breakpoint(phablet) { margin-top: $spaceThree; } }
+.mt5{margin-top:$spaceFive; @include breakpoint(phablet) { margin-top: $spaceFour; } }
+.mb1{margin-bottom:$spaceOne}
+.mb2{margin-bottom:$spaceTwo; @include breakpoint(phablet) { margin-bottom: $spaceOne; } }
+.mb3{margin-bottom:$spaceThree; @include breakpoint(phablet) { margin-bottom: $spaceTwo; } }
+.mb4{margin-bottom:$spaceFour; @include breakpoint(phablet) { margin-bottom: $spaceThree; }}
+.mb5{margin-bottom:$spaceFive; @include breakpoint(phablet) { margin-bottom: $spaceFour; } }
+.preloader { position:fixed; width:100%; height:100%; overflow:hidden; }
+.spinner { position: absolute; width:80px; height:80px; top: 50%; left: 50%; margin-left:-40px; margin-top:-40px; @include animation(rotatee 2.0s infinite linear); }
+.s-dot { display: inline-block; position: absolute; width:60%; height:60%;  top: 0; background-color:$coBlack; @include border-radius(100%); @include animation(bouncee 2.0s infinite ease-in-out); }
+.s-dot2 { top: auto; bottom: 0px; @include animation-delay( -1.0s); }
+@include keyframes(rotatee) { 100% { @include transform(rotate(360deg)); } }
+@include keyframes(bouncee) { 0%, 100% { @include transform(scale(0.0)); } 50% { @include transform(scale(1.0)); } }
+.explorer .preloader { background:#fff url('../images/page_template/loading.gif') no-repeat center; }
+.explorer .preloader .spinner { display:none; }
+// this is area is for reserved class
+
+// you can include here the rest of your class name eg. home page
+
+//HOME PAGE
+.bannerbg {
+  width: 100%;
+  background-color: transparent;
+  max-height: 708px;
+  background: url(../images/home/bannerbg.png) no-repeat;
+  background-size: cover;
+  //background-size: 100% 100%;
+  background-size: 144% 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.home-os {
+  position: relative;
+  z-index: 1;
+}
+#centers {
+  margin:0 auto !important;
+}
+.ostext {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'latoregular';
+}
+.our-services-list div.vc_column_container  {
+  background: url(../images/home/ohbg.png) center no-repeat !important;
+  padding: 27px 10px;
+  background-size: cover;
+}
+.ohcontent {
+  color: #f1f1f1;
+  font-size: 12px;
+  font-family: 'latoregular';
+}
+.ohcontent strong {
+  font-family: 'latoblack';
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.home-os {
+  background-image: url(../images/home/our-bottom-bg.png);
+  background-repeat: repeat-x;
+  background-position: bottom left;
+}
+.yso {
+  color: #8c8c8c;
+  font-size: 12px;
+  font-family: 'latoregular';
+}
+.map-hldr {
+  background: url(../images/home/map-bg.jpg) repeat;
+  padding: 58px 0;
+}
+.slick-image-slide p, .slick-image-slide strong {
+    display:none;
+}
+.slick-center p, .slick-center strong {
+  display: block;
+  margin-top: 15px;
+  color: #fff;
+  font-family: Arial;
+  font-weight: normal;
+  font-style: italic;
+}
+.slick-center strong {
+  font-size: 20px;
+}
+/***PAGES **/
+header#page_titl {
+  background: url(../images/page_template/bg-header.jpg) repeat;
+  border-bottom: 5px solid #145882;
+  
+  color: #2b688f;
+}
+header#page_titl p, header#page_titl p a {
+  font-style: italic;
+  font-family: arial;
+  font-size: 14px;
+  color: #2b688f;
+}
+h1#page-title {
+  color: #2b688f;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+h1#page-title span {
+  color: #fff;
+}
+
+.fimage {
+  padding: 88px 0 24px 0;
+  background-position: top right;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+}
+.entry-content p {
+  color: #8f8f8f;
+  font-family: 'Arial';
+  font-size: 14px;
+  font-style: italic;
+}
+
+/** OUR TECHNOLOGY **/
+.wpb_gallery_slides li {
+  border: 1px solid #f3f3f3;
+}
+/** SIDEBAR **/
+#secondary {
+  margin: 5em 0;
+}
+.sibdebar {
+  background: #3b9fdc;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  padding: 2em;
+  color: #fff;
+}
+.sibdebar section.widget{
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+}
+.sibdebar .widget .textwidget {
+  font-family: Arial;
+  font-size: 12px;
+  color: #fff;
+  font-style: italic;
+}
+.sibdebar section .search-form input[type="search"] {
+  width: 90%;
+  background: white;
+  color: #cbcbcb;
+  font-size: 12px;
+  padding: 12px ;
+  border: none;
+  font-weight: normal;
+  font-family: Arial;
+  font-style: italic;
+}
+.sibdebar section .search-form input[type="submit"] {
+  background: #fff;
+  color: #145882;
+  border: 1px solid #145882;
+  text-transform: uppercase;
+      padding: 9px 20px;
+}
+.sibdebar section label {
+  display: block;
+}
+/** CONTACT PAGE **/
+.contact-desc h2 {
+  color: #1ba8b9;
+  font-size: 26px;
+  font-style: italic;
+}
+.contact-desc  {
+  color: #a7a7a7;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.cform .wpcf7 form.wpcf7-form p label {
+  font-size: 16px;
+  color: #a7a7a7;
+  font-family: Arial;
+  font-weight: normal;
+  font-style: initial;
+  display: block;
+}
+.cform .wpcf7 form.wpcf7-form p label span input, .cform .wpcf7 form.wpcf7-form p label span textarea {
+  padding: 10px;
+  width: 90%;
+}
+.cform .wpcf7 form.wpcf7-form p label span input[type="submit"] {
+  font-family: Arial;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px 79px;
+}
+/** PLANS AND PRICING **/
+.ptp-pricing-table {
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+div.ptp-bullet-item {
+  background-color: #e5e5e5;
+}
+.price-header div.ptp-plan, .price-header div.ptp-price {
+  background-color: transparent;
+  color: #fff;
+}
+.price-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#656565+0,2d2b30+100 */
+    background: #656565; /* Old browsers */
+    background: -moz-linear-gradient(top, #656565 0%, #2d2b30 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #656565 0%,#2d2b30 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #656565 0%,#2d2b30 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#656565', endColorstr='#2d2b30',GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    padding-top: 15px;
+}
+.ptp-pricing-table > .ptp-four-col {
+    width: 25%;
+}
+.ptp-pricing-table > .ptp-col {
+  padding: 0;
+}
+.price-header div.ptp-price  {
+  padding: 0 .9375em 1.25em;
+}
+.price-header div.ptp-price {
+  color: #b1b1bb;
+  font-family: Arial;
+  font-size: 15px;
+  font-style: italic;
+}
+.price-header div.ptp-plan {
+  background-color: rgba(0,0,0,0.1);
+  padding: 0 !important;
+    font-size: 20px !important;
+    font-family: Arial;
+    font-weight: normal;
+}
+.price-header div.ptp-price strong {
+  font-family: Arial;
+  font-size: 70px;
+  color: #fff;
+  display: block;
+  font-style: italic;
+      line-height: 1em;
+}
+
+.ptp-highlight .price-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1ba8b9+0,027886+100 */
+  background: #1ba8b9; /* Old browsers */
+  background: -moz-linear-gradient(top, #1ba8b9 0%, #027886 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #1ba8b9 0%,#027886 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #1ba8b9 0%,#027886 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ba8b9', endColorstr='#027886',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  padding-top: 15px;
+
+}
+.ptp-highlight div.ptp-bullet-item {
+  color: #fff;
+  background-color: #1ba8b9;
+  border-top: 1px solid #ceeaee;
+  border-bottom: 1px solid #027886;
+}
+#ptp-177 div.ptp-bullet-item {
+    font-size: 1.2em;
+    font-family: arial;
+    font-style: italic;
+}
+#ptp-177 div.ptp-item-container div {
+    font-size: 13.5px;
+}

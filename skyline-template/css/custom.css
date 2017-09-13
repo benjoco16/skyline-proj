@@ -1,0 +1,80 @@
+.mobile-menu {
+	height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background: #3b9fdc;
+}
+
+/* The navigation menu links */
+.mobile-menu li a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+/* When you mouse over the navigation links, change their color */
+.mobile-menu li a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.mobile-menu .closebtn {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #268faa;
+    z-index: 100;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#page {
+    transition: margin-right .5s;
+}
+@media screen and (max-width: 768px) { 
+    .nav > li > a:hover, .nav > li > a:focus {
+        background-color: #0f7ec1;
+    }
+    .navbar-toggle {
+            top: 36px;
+    }
+    .home-os {
+       padding: 80px 0 70px 0;
+        margin-top: -127px;
+    }
+    .hosep{
+        display:none;
+    }
+    .our-services-list div.vc_column_container {
+       background: none !important;
+        border: 1px solid #f2f3f4;
+        margin-bottom: 20px;
+    }
+    .widget_list .menu-menu-1-container ul li {
+        list-style: none;
+    }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .mobile-menu {padding-top: 15px;}
+    .mobile-menu li a {font-size: 18px;}
+}
+@media screen and (max-width: 400px) { 
+    .navbar-brand > img {
+        max-width: 213px;
+    }
+    .navbar-toggle {
+        margin-top: 20px;
+    }
+}
